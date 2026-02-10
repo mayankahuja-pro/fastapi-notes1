@@ -1,4 +1,5 @@
 # 📝 FastAPI Notes App
+![fastapi_notes_logo_1770741952137](https://github.com/user-attachments/assets/1a77425a-40fc-4663-bdd7-9bde8cca3596)
 
 A sleek, lightweight, and efficient Notes Application built with **FastAPI**, **SQLAlchemy**, and **Jinja2 Templates**. This project demonstrates a full CRUD (Create, Read, Update, Delete) functionality with a clean SQLite backend.
 
