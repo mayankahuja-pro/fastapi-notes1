@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form method="post" action="/add">
+    <input name="title" placeholder="Title" required />
+    <br>
+    <textarea name="content" placeholder="Content"></textarea>
+    <br>
+    <button>Add Note</button>
+</form>
+
+<hr>
+
+<ul>
+{% for note in notes %}
+    <li>
+        <b>{{ note.title }}</b> - {{ note.content }}
+        <a href="/edit/{{ note.id }}">Edit</a>
+        <a href="/delete/{{ note.id }}">Delete</a>
+    </li>
+{% endfor %}
+</ul>
+
+{% endblock %}
